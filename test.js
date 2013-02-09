@@ -9,15 +9,15 @@ var stringifier = JSONStream.stringify()
 stringifier.pipe(ps.stdin)
 
 stringifier.write({
-	title : 'foo',
-	type : 'json',
-	data : "{\n  some : 'other',\n  'super' : 'sweet',\n  contents : 'present'}"
+  title : 'foo',
+  type : 'json',
+  data : "{\n  some : 'other',\n  'super' : 'sweet',\n  contents : 'present'}"
 })
 
 stringifier.write({
-	title : 'bar',
-	type : 'xml',
-	data : '<just>more</just><sweet>content</sweet>'
+  title : 'bar',
+  type : 'xml',
+  data : '<just>more</just><sweet>content</sweet>'
 })
 
 stringifier.end()
