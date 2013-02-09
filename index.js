@@ -75,7 +75,7 @@ process.stdin
       .seq(function () {
         var ps = spawn('git', ['push', '-u', 'origin', 'master'], { cwd : dir })
         ps.stderr.on('data', function (data) {
-          if (data.toString().match(/Everything\ up-to-data/)) return
+          if (data.toString().match(/Everything\ up-to-date/)) return
           ps.stderr.write(data)
         })
         ps.on('exit', this.ok)
