@@ -1,0 +1,26 @@
+{
+  "name": "data-berlin-uploader",
+  "version": "0.0.0",
+  "description": "Takes data on stdin and pushes it onto github",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": "",
+  "keywords": [
+    "opendata",
+    "data",
+    "berlin",
+    "github"
+  ],
+  "author": "Julian Gruber <julian@juliangruber.com>",
+  "license": "MIT",
+  "dependencies": {
+    "github": "~0.1.8",
+    "JSONStream": "~0.4.3",
+    "mkdirp": "~0.3.4",
+    "seq": "~0.3.5",
+    "request": "~2.12.0",
+    "rimraf": "~2.1.4"
+  }
+}
