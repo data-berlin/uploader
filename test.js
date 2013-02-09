@@ -1,7 +1,7 @@
 var spawn = require('child_process').spawn
 var JSONStream = require('JSONStream')
 
-var ps = spawn('node', [__dirname + '/index.js'])
+var ps = spawn('node', [__dirname + '/index.js'], { env : process.env })
 ps.stdout.pipe(process.stdout)
 ps.stderr.pipe(process.stderr)
 
